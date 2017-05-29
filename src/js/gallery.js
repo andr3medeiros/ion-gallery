@@ -14,6 +14,7 @@
         ionGalleryItems: '=ionGalleryItems',
         ionGalleryRowSize: '=?ionGalleryRow',
         ionItemAction: '&?ionItemAction',
+        ionExcludeAction: '&?ionExcludeAction',
         ionZoomEvents: '=?ionZoomEvents'
       },
       controller: controller,
@@ -34,16 +35,11 @@
 
       _drawGallery();
 
-      (function () {
-        $scope.$watch(function () {
-          return $scope.ionGalleryItems.length;
-        }, function (newVal, oldVal) {
-          if (newVal !== oldVal) {
-            _drawGallery();
-          }
-        });
-      }());
-
+      $scope.$watchCollection('ionGalleryItems', function(newVal, oldVal) {
+        if(newVal.length != oldVal.length) {
+          _drawGallery();
+        }
+      });
     }
 
     function link(scope, element, attrs) {
