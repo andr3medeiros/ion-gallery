@@ -12,11 +12,7 @@ Demo availabe in Ionic View with id 150745FE
 
 # Usage
 
-Load script and css on the html
-
-    <link href="lib/ion-gallery/dist/ion-gallery.css" rel="stylesheet">
-    ...
-    <script src="lib/ion-gallery/dist/ion-gallery.min.js"></script>
+  With CommonJs or Webpack, just require('ion-gallery') and require('ion-gallery/dist/ion-gallery.css').
 
 Add ion-gallery as dependency to your project
 

@@ -15,7 +15,7 @@
         ionGalleryItems: '=ionGalleryItems',
         ionGalleryRowSize: '=?ionGalleryRow',
         ionItemAction: '&?ionItemAction',
-        ionExcludeAction: '&?ionExcludeAction',
+        ionExcludeAction: '&?ionExcludeActionAAAAAAAAAAAAAAAa',
         ionZoomEvents: '=?ionZoomEvents'
       },
       controller: controller,
